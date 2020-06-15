@@ -1,0 +1,264 @@
+/* css reset :start */
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Balsamiq Sans', cursive;
+}
+/* ses */
+
+/* css Variable */
+/* :root{
+    --navbar-height:59px;
+} */
+/* nav soro */
+.navBar{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.navBar::before{
+    content: "";
+    background-color: gray;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* logo and image */
+.logo {
+    margin: -8px 80px;
+    color: tomato;
+    position: relative;
+    top: 40px;
+}
+@media only screen and (max-width: 900px){
+    .logo{
+        top: 20px;
+    }
+}
+/* list style */
+.navBar ul{
+    display: flex;
+}
+.navBar ul li{
+    list-style: none;
+    font-size: 1.2em;
+}
+.navBar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 22px 20px;
+    color: honeydew;
+    font-size: 25px;
+    position: relative;
+    top: 10px;
+    transition: 1s;
+}
+@media only screen and (max-width: 415px){
+    .navBar ul li a {
+        font-size: 15px;
+        padding: 22px 15px;
+    }
+
+
+}
+.navBar ul li a:hover{
+    color: black;
+    /* background-color: cadetblue; */
+    /* padding: 5px; */
+    
+    /* border-radius: 10px; */
+
+}
+/* nav ses */
+/* home soro */
+.home{
+    display: flex;
+    flex-direction: column;
+    /* padding: 3px 200px; */
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+.home::before{
+    content: "";
+    background-image: url(png/3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.9;
+}
+.home h1{
+    color: cornsilk;
+    text-align: center;
+    font-size: 3.2rem;
+    padding: 52px 22px;
+}
+.home p{
+    color: cornsilk;
+    text-align: center;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.h-primary{
+    font-size: 1.8rem;
+    padding: 52px 22px;
+    text-align: center;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+   background-color: transparent;
+   font-size: 1.5rem;
+   color: white;
+   cursor: pointer;
+   border-radius: 10px;
+   transition: 1s ease-in-out;
+}
+.btn:hover{
+    background-color: tomato;
+    color: black;
+}
+/* home ses */
+
+/* services soro */
+
+/* .services-container{
+    
+    
+    
+} */
+.services{
+    display: flex;
+    flex-direction:row ;
+    flex-wrap: wrap;
+    /* margin: 34px; */
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    
+    
+
+    
+}
+.services .box{
+    margin: 15px;
+    border: 2px solid rgb(141, 93, 119);
+    width: 380px;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+   border-radius: 20px;
+
+
+}
+.services .box img{
+    height: 160px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    
+}
+.services p{
+    text-align: center;
+    margin: 15px;
+
+}
+#os{
+    margin-top: 200px;
+}
+
+/* services ses */
+/* client soro */
+.client-section{
+    /* height: 333px; */
+    position: relative;
+}
+.client-section::before {
+    content: "";
+    position: absolute;
+    background-image: url(png/2.jpg);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.client img{
+    height: 124px;
+    margin: 30px;
+}
+/* contact soro */
+.contact{
+    position: relative;
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-image: url(back/API.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.contact form{
+    width: 50%;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    
+
+}
+.contact-box input,
+.contact-box textarea{
+    width: 100%;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 20px;
+
+}
+/* footer soro */
+
+footer{
+    background:gray;
+    color: white;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    text-align: center;
+    font-size: 30px;
+}
